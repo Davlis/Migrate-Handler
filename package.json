@@ -1,0 +1,32 @@
+{
+  "name": "migrate-handler",
+  "version": "1.0.0",
+  "description": "Solution for MongoDB migration for Node.js applications",
+  "main": "migrate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davlis/Migrate-Handler.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "migrate",
+    "migration",
+    "nodejs"
+  ],
+  "author": "Dawid Liszka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Davlis/Migrate-Handler/issues"
+  },
+  "homepage": "https://github.com/Davlis/Migrate-Handler#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "fawn": "^2.1.1",
+    "mongoose": "^4.13.9",
+    "winston": "^2.4.0"
+  }
+}
