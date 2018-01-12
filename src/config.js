@@ -1,11 +1,11 @@
-import { load as dotenvLoad } from 'dotenv'
+require('dotenv').config()
 
-export default function generateConfig() {
-    const env = dotenvLoad({ path: '.env' }).parsed || process.env
-
+function generateConfig() {
     return {
         mongo: {
-            uri: env.DATABASE_URL,
+            uri: process.env.DATABASE_URL,
         },
     }
 }
+
+module.exports = generateConfig;

@@ -1,4 +1,4 @@
-import winston from 'winston'
+const winston = require('winston');
 
 const logger = new winston.Logger({
     level                   : process.env.LOGGING_LEVEL || 'debug',
@@ -6,8 +6,8 @@ const logger = new winston.Logger({
     humanReadableUnhandledException: true,
     exitOnError             : false,
     transports              : [
-        new (winston.transports.Console)(),
+        new (winston.transports.Console)()
     ],
-})
+});
 
-export default logger
+module.exports = logger;
