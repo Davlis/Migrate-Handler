@@ -4,7 +4,8 @@
   "description": "Solution for MongoDB migration for Node.js applications",
   "main": "migrate.js",
   "scripts": {
-    "start": "node lib/migrate.js",
+    "build": "babel src -d dist",
+    "start": "node --harmony dist/config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,11 @@
     "url": "https://github.com/Davlis/Migrate-Handler/issues"
   },
   "homepage": "https://github.com/Davlis/Migrate-Handler#readme",
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
   "dependencies": {
     "async": "^2.6.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
