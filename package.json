@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
     "start": "node --harmony dist/config",
+    "watch": "babel -w src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,5 +38,8 @@
     "fawn": "^2.1.1",
     "mongoose": "^4.13.9",
     "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
   }
 }
